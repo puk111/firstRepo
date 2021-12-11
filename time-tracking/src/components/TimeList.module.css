@@ -1,0 +1,66 @@
+.listContainer {
+  width: 20rem;
+  height: 10rem;
+  background-color: hsl(236, 50%, 6%);
+  border-radius: 12px;
+  margin-bottom: 1rem;
+  position: relative;
+  list-style-type: none;
+}
+
+.dataContainer {
+  position: absolute;
+  height: 7rem;
+  width: 20rem;
+  bottom: 0;
+  background-color: hsl(235, 46%, 20%);
+  border-radius: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.navData {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  margin-bottom: 0.6rem;
+}
+.timeContainer {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.timeTextCur {
+  font-size: 1.5rem;
+  font-weight: 300;
+}
+.timeTextPrev {
+  font-size: 0.8rem;
+  font-weight: 300;
+  color: hsl(235, 45%, 61%);
+}
+
+ul:first-child > .listContainer {
+  background: hsl(15, 100%, 70%) url("../img/icon-work.svg") no-repeat 95% -10%;
+}
+
+ul:nth-child(2) > .listContainer {
+  background: hsl(195, 74%, 62%) url("../img/icon-play.svg") no-repeat 95% -10%;
+}
+ul:nth-child(3) > .listContainer {
+  background: hsl(348, 100%, 68%) url("../img/icon-study.svg") no-repeat 95% -10%;
+}
+
+ul:nth-child(4) > .listContainer {
+  background: hsl(145, 58%, 55%) url("../img/icon-exercise.svg") no-repeat 95%
+    0%;
+}
+ul:nth-child(5) > .listContainer {
+  background: hsl(264, 64%, 52%) url("../img/icon-social.svg") no-repeat 95% -10%;
+}
+ul:last-child > .listContainer {
+  background: hsl(43, 84%, 65%) url("../img/icon-self-care.svg") no-repeat 95% -10%;
+}
