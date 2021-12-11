@@ -1,0 +1,205 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Barlow Semi Condensed", sans-serif;
+  font-size: 0.8rem;
+  background-color: whitesmoke;
+}
+mark {
+  background-color: inherit;
+  color: inherit;
+  font-size: 1.8rem;
+  display: block;
+  margin: 2rem 0;
+  z-index: 10;
+}
+
+blockquote {
+  font-size: 1.2rem;
+  display: block;
+}
+
+.container {
+  height: auto;
+  width: 100%;
+  display: grid;
+
+  justify-items: center;
+  column-gap: 1rem;
+  row-gap: 1rem;
+}
+
+article {
+  display: block;
+  width: 90%;
+  padding: 1.5rem;
+  border-radius: 15px;
+}
+
+header {
+  display: flex;
+  align-items: center;
+}
+
+.avatar__container {
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+
+  background-size: cover;
+  border: 2px solid hsl(0, 0%, 81%);
+}
+
+.name__container {
+  margin-left: 1.5rem;
+}
+
+.name__text {
+  color: hsla(210, 46%, 95%, 0.7);
+  font-size: 1.2rem;
+  margin-bottom: 0.1rem;
+}
+
+.name__sub--text {
+  font-size: 0.8rem;
+}
+
+.attribution {
+  display: none;
+}
+.first__article {
+  background-color: hsl(263, 55%, 52%);
+  color: hsla(210, 46%, 95%, 0.5);
+  position: relative;
+}
+.first__article .avatar__container {
+  background-image: url("./img/image-daniel.jpg");
+}
+
+.first__article svg {
+  position: absolute;
+  right: 2rem;
+  top: 2rem;
+  z-index: 0;
+}
+
+.first__article mark > p {
+  position: relative;
+  color: white;
+  z-index: 15;
+}
+
+.second__article {
+  background-color: hsl(217, 19%, 35%);
+  color: hsl(0, 0%, 81%);
+}
+
+.second__article .avatar__container {
+  background-image: url("./img/image-jonathan.jpg");
+}
+
+.third__article {
+  background-color: hsl(0, 0%, 100%);
+  color: hsl(217, 19%, 35%);
+}
+.third__article .avatar__container {
+  background-image: url("./img/image-jeanette.jpg");
+}
+.third__article .name__text {
+  color: hsl(217, 19%, 35%);
+}
+.fourth__article {
+  background-color: hsl(219, 29%, 14%);
+  color: hsl(0, 0%, 81%);
+}
+.fourth__article .avatar__container {
+  background-image: url("./img/image-patrick.jpg");
+}
+
+.fifth__article {
+  background-color: hsl(0, 0%, 100%);
+  color: hsl(217, 19%, 35%);
+}
+.fifth__article .avatar__container {
+  background-image: url("./img/image-kira.jpg");
+}
+.fifth__article .name__text {
+  color: hsl(217, 19%, 35%);
+}
+article:first-of-type {
+  margin-top: 3rem;
+}
+
+article:last-of-type {
+  margin-bottom: 3rem;
+}
+
+@media (min-width: 1440px) {
+  html {
+    height: 100vh;
+  }
+  body {
+    width: 100%;
+
+    height: 100vh;
+  }
+  /* main {
+    display: grid;
+    height: 100vh !important;
+    grid-template-columns: 20% 20% 20% 20%;
+    grid-template-rows: 40% 40%;
+    justify-items: center;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+  } */
+
+  .container {
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 20% 20% 20% 20%;
+    grid-template-rows: 42% 42%;
+    justify-items: center;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+  }
+
+  article {
+    margin: 0;
+    padding: 1rem;
+    height: 100%;
+    width: 100%;
+  }
+  .first__article {
+    grid-column: 1 / span 2;
+    grid-row: 1;
+  }
+  .second__article {
+    grid-column: 3;
+    grid-row: 1;
+  }
+  .third__article {
+    grid-column: 1;
+    grid-row: 2;
+  }
+  .fourth__article {
+    grid-column: 2 / span 2;
+    grid-row: 2;
+  }
+  .fifth__article {
+    grid-column: 4;
+    grid-row: 1 / span 2;
+  }
+  article:first-of-type {
+    margin-top: 0;
+  }
+
+  article:last-of-type {
+    margin-bottom: 0;
+  }
+}
