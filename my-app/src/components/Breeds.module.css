@@ -1,0 +1,8 @@
+.selectInputContainer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.selectBar {
+  width: 20rem;
+}
