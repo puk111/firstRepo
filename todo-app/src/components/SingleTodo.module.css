@@ -1,0 +1,49 @@
+.item__wrapper {
+  width: 25rem;
+  background-color: rgb(37, 39, 60);
+
+  margin: 1rem auto;
+  height: 2.5rem;
+  border-radius: 6px;
+
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.item__el {
+  width: 60%;
+}
+
+.btn {
+  background-color: rgb(37, 39, 60);
+  border: none;
+}
+
+.success__icon {
+  color: rgb(202, 205, 232);
+  font-size: 1.4rem;
+}
+.remove__icon {
+  color: rgb(202, 205, 232);
+  font-size: 1.4rem;
+}
+
+.btn:focus,
+.btn:hover,
+.remove__icon:hover,
+.remove__icon:focus {
+  cursor: pointer;
+  color: rgb(209, 47, 60);
+}
+.success__icon:hover,
+.success__icon:focus {
+  cursor: pointer;
+  color: rgb(56, 218, 118);
+}
+
+/* @media (min-width: 40rem) {
+  .item__wrapper {
+    margin: 1rem auto;
+    width: 25rem;
+  }
+} */

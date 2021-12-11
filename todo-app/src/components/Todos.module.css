@@ -1,0 +1,36 @@
+.task__wrapper {
+  margin: 4rem auto;
+  width: 100%;
+  text-align: center;
+  color: aliceblue;
+}
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  text-align: left;
+}
+
+.task__goal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.task__starIcon {
+  color: rgb(216, 215, 212);
+  font-size: 1.6rem;
+  margin: 0 1rem 0 2.5rem;
+}
+.task__score {
+  font-size: 1.6rem;
+}
+
+/* @media (min-width: 40rem) {
+  .task__wrapper {
+    margin: 0 auto;
+    width: 25rem;
+  }
+}
+ */

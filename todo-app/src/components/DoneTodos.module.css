@@ -1,0 +1,37 @@
+.done__task__wrapper {
+  margin: 4rem auto;
+  width: 100%;
+  text-align: center;
+  color: aliceblue;
+}
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.item__done {
+  width: 25rem;
+  background-color: rgb(30, 139, 116);
+  vertical-align: text-bottom;
+  margin: 1rem auto;
+  height: 2.5rem;
+  border-radius: 6px;
+  padding-top: 0.5rem;
+  padding-left: 1.5rem;
+}
+
+.done__task__goal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.done__task__starIcon {
+  color: rgb(255, 215, 0);
+  font-size: 1.6rem;
+  margin: 0 1rem 0 2.5rem;
+}
+.done__task__score {
+  font-size: 1.6rem;
+}

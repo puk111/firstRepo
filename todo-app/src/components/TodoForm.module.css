@@ -1,0 +1,61 @@
+h1 {
+  font-size: 2.2rem;
+}
+
+.form__label {
+  font-size: 2.2rem;
+  display: block;
+  color: aliceblue;
+  margin: 2rem auto;
+  padding-left: 1.2rem;
+  text-align: center;
+}
+
+.control {
+  width: 25rem;
+  background-color: rgb(37, 39, 60);
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 0 auto;
+  height: 2.5rem;
+  border-radius: 6px;
+}
+
+input {
+  font: inherit;
+  background-color: rgb(37, 39, 60);
+  border: none;
+  color: aliceblue;
+  text-rendering: inherit;
+}
+input:focus,
+input:focus-visible,
+input:target,
+input:active input:-webkit-autofill,
+input:-webkit-autofill:focus {
+  transition: background-color 600000s 0s, color 600000s 0s;
+}
+.btn_add {
+  background-color: rgb(37, 39, 60);
+  border: none;
+}
+
+.form__addIcon {
+  color: rgb(202, 205, 232);
+  font-size: 1.4rem;
+}
+.btn_add:hover,
+.btn_add:focus,
+.form__addIcon:hover,
+.form__addIcon:focus {
+  cursor: pointer;
+  color: rgb(228, 229, 241);
+}
+
+@media (min-width: 40rem) {
+  form {
+    margin: auto;
+    width: 25rem;
+  }
+}
